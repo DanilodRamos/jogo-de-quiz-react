@@ -1,0 +1,40 @@
+$primary-color: #3498db;
+$success-color: #2ecc71;
+
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: $primary-color;
+
+  h1 {
+    color: $primary-color;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      background-color: $primary-color;
+      color: white;
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  p {
+    color: $success-color;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
